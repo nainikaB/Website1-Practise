@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>first-try</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="row clearfix">
+                    <img src="images/logo-3.png" alt="logo" class="logo" >
+                    <ul class="main-nav animated slideInDown" id="check-class">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">PRODUCTS</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+
+                    </ul>
+                    <a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a> 
+                </div>
+            </nav>
+            <div class="main-content-header">
+            <h1>
+                WELCOME TO <span class="colordiff">MY SITE.</span><br> WHERE THE IMPOSSIBLE AWAITS.
+            </h1>
+            <a href="#" class="btn btn-full">Visit Us</a>
+            <a href="#" class="btn btn-nav">Shop Now</a>
+        </div>
+        </header>
+
+        <script type="text/javascript" >
+        function slideshow(){
+            var x = document.getElementById('check-class');
+            if(x.style.display === "none") {
+                x.style.display="block";
+            } else {
+                x.style.display="none";
+            }
+
+        }
+        
+        </script>
+
+    </body>
+    </html>
